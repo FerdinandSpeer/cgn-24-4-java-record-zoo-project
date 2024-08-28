@@ -3,15 +3,15 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         //Add Owner
-        Owner Dominic = new Owner("Dominic", 20, "Berlin");
+        Owner dominic = new Owner("Dominic", 20, "Berlin");
         //Add Species
-        Species mammal = new Species("Mammal", "1500g/day");
+        Species mammal = new Species("Mammal", 1500);
 
         Animal animal1 = new Animal("A700", "Simba", "Lion", 5, new Owner("Peter", 54, "London"), mammal);
-        Animal animal2= new Animal("A701", "Kalimba", "Elefant", 20, Dominic, mammal);
-        Animal animal3= new Animal("A702", "Gunni", "Pinguin", 3, Dominic, new Species("FakeBird", "1000g/day"));
-        Animal animal4= new Animal("A703", "Piggy", "Pig", 7, Dominic, mammal);
-        Animal animal5= new Animal("A704", "Dominic", "Giraffe", 15, Dominic, mammal);
+        Animal animal2= new Animal("A701", "Kalimba", "Elefant", 20, dominic, mammal);
+        Animal animal3= new Animal("A702", "Gunni", "Pinguin", 3, dominic, new Species("FakeBird", 1000));
+        Animal animal4= new Animal("A703", "Piggy", "Pig", 7, dominic, mammal);
+        Animal animal5= new Animal("A704", "Dominic", "Giraffe", 15, dominic, mammal);
 
         //Call the automatically generated methods in the Record and check if they do what you expect (equals, toString).
 
